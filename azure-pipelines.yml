@@ -1,13 +1,12 @@
-# Set variables once
-variables:
-  azureSubscription: 'cm-workspace'
-
 trigger:
 - master
 
 pool:
   vmImage: 'Ubuntu-16.04'
 
+
+variables:
+  azure_Subscription: 'cm-workspace'
 steps:
 
 - task: AzureCLI@1
