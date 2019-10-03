@@ -18,7 +18,7 @@ steps:
   inputs:
     azureSubscription: 'build-demo'
     scriptLocation: inlineScript
-    inlineScript: 'az ml folder attach -w myworkspace -g myresourcegroup'
+    inlineScript: 'az ml folder attach -w cm-ml-workspace -g rg-cm-ml-workspace'
 
 - task: AzureCLI@1
   displayName: 'Create compute for training'
